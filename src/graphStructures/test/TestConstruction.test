@@ -1,0 +1,7 @@
+# This will test creating the graph and making sure its state is correct.
+
+# Create the graph.
+CreateGraph graphtest
+
+# Make sure the graph has no nodes and no edges.
+ListNodes graphtest

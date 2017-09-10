@@ -1,0 +1,19 @@
+Menu:
+r to find a route
+b to see a list of all buildings
+q to quit
+
+Enter an option ('m' to see the menu): # Verify that the program correctly handles buildings that don't exist
+# Destination does not exist
+Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: DAN
+
+Enter an option ('m' to see the menu):
+# Source does not exist
+Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: DAN
+
+Enter an option ('m' to see the menu):
+# Both does not exist
+Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: DAN
+Unknown building: DDD
+
+Enter an option ('m' to see the menu):

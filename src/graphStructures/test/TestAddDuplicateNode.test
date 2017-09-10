@@ -1,0 +1,39 @@
+# This will test adding nodes to the graph.
+
+# Create the graph.
+CreateGraph graphtest
+
+# Make sure the graph has no nodes and no edges.
+ListNodes graphtest
+
+# Add one node
+AddNode graphtest n1
+
+# Add a duplicate node
+AddNode graphtest n1
+
+# Make sure there are no duplicates
+ListNodes graphtest
+
+# Add multiple nodes
+AddNode graphtest n2
+AddNode graphtest n3
+AddNode graphtest n4
+
+# Add duplicate nodes
+AddNode graphtest n2
+AddNode graphtest n1
+
+# Make sure there are no duplicates
+ListNodes graphtest
+
+# Add a node
+AddNode graphtest n5
+
+# Add dupliate nodes
+AddNode graphtest n1
+AddNode graphtest n3
+AddNode graphtest n5
+
+# Make sure there are no duplicates
+ListNodes graphtest

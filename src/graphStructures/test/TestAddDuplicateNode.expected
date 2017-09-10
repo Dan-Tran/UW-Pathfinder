@@ -1,0 +1,39 @@
+# This will test adding nodes to the graph.
+
+# Create the graph.
+created graph graphtest
+
+# Make sure the graph has no nodes and no edges.
+graphtest contains:
+
+# Add one node
+added node n1 to graphtest
+
+# Add a duplicate node
+added node n1 to graphtest
+
+# Make sure there are no duplicates
+graphtest contains: n1
+
+# Add multiple nodes
+added node n2 to graphtest
+added node n3 to graphtest
+added node n4 to graphtest
+
+# Add duplicate nodes
+added node n2 to graphtest
+added node n1 to graphtest
+
+# Make sure there are no duplicates
+graphtest contains: n1 n2 n3 n4
+
+# Add a node
+added node n5 to graphtest
+
+# Add dupliate nodes
+added node n1 to graphtest
+added node n3 to graphtest
+added node n5 to graphtest
+
+# Make sure there are no duplicates
+graphtest contains: n1 n2 n3 n4 n5

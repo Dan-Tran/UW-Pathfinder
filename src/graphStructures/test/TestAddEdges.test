@@ -1,0 +1,41 @@
+# This will test adding nodes to the graph.
+
+# Create the graph.
+CreateGraph graphtest
+
+# Make sure the graph has no nodes and no edges.
+ListNodes graphtest
+
+# Add one node
+AddNode graphtest n1
+AddNode graphtest n2
+AddNode graphtest n3
+AddNode graphtest n4
+AddNode graphtest n5
+
+# Make sure the nodes were added
+ListNodes graphtest
+
+# Add an edge between n1 and n2
+AddEdge graphtest n1 n2 e1
+
+# Make sure the edge was added
+ListChildren graphtest n1
+
+# Make sure n2 is not a parent.
+ListChildren graphtest n2
+
+# Add more edges
+AddEdge graphtest n1 n3 e2
+AddEdge graphtest n2 n3 e3
+AddEdge graphtest n4 n1 e4
+AddEdge graphtest n5 n4 e5
+
+# Make sure graph is correct.
+ListNodes graphtest
+
+ListChildren graphtest n1
+ListChildren graphtest n2
+ListChildren graphtest n3
+ListChildren graphtest n4
+ListChildren graphtest n5

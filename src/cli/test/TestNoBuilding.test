@@ -1,0 +1,17 @@
+# Verify that the program correctly handles buildings that don't exist
+# Destination does not exist
+r
+CSE
+DAN
+
+# Source does not exist
+r
+DAN
+CSE
+
+# Both does not exist
+r
+DAN
+DDD
+
+q

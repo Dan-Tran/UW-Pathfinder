@@ -1,0 +1,41 @@
+# This will test adding nodes to the graph.
+
+# Create the graph.
+created graph graphtest
+
+# Make sure the graph has no nodes and no edges.
+graphtest contains:
+
+# Add one node
+added node n1 to graphtest
+
+# Make sure the node was added
+graphtest contains: n1
+
+# Make sure there is no edges
+the children of n1 in graphtest are:
+
+# Add another node
+added node n2 to graphtest
+
+# Make sure the node was added
+graphtest contains: n1 n2
+
+#Makesure there is no edges
+the children of n1 in graphtest are:
+the children of n2 in graphtest are:
+
+# Add multiple nodes.
+added node n3 to graphtest
+added node n4 to graphtest
+added node n5 to graphtest
+
+# Make sure the nodes were added
+graphtest contains: n1 n2 n3 n4 n5
+
+# Make sure there are no edges
+the children of n1 in graphtest are:
+the children of n2 in graphtest are:
+the children of n3 in graphtest are:
+the children of n4 in graphtest are:
+the children of n5 in graphtest are:
