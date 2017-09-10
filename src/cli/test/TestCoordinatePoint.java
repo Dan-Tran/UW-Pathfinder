@@ -18,7 +18,6 @@ package cli.test;
 
 import org.junit.Test;
 
-import cli.Building;
 import cli.CoordinatePoint;
 
 import static org.junit.Assert.assertFalse;
